@@ -36,7 +36,7 @@ const showImages = (images) => {
   })
 }
 
-
+// Image selection and de-selection problem solved
 let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
