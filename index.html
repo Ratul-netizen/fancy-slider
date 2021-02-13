@@ -15,9 +15,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!--Bonus part-->
+<header>
+  <div class="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fancy Slider</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="text-align: end">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
 <body>
-  <div class="container">
-    <h4 class="mt-2 text-center">Search Image for create slider</h4>
+  <div class="container mt-5">
+    <h4 class="mt-2 text-center">Search Image to create slider</h4>
     <div class="form-inline mt-3 d-flex justify-content-center">
       <div class="input-group col-md-6 mb-2">
         <input type="text" class="form-control" id="search" placeholder="Search Scenarios">
@@ -31,6 +64,11 @@
           <input class="form-control" id="duration" placeholder="Slider change duration">
         </div>
         <button id="create-slider" class="btn btn-primary px-5">Create slider</button>
+      </div>
+      <div id="loading-spinner" class="d-flex justify-content-center d-lg-none">
+        <div class="spinner-border text-info" role="status">
+          
+        </div>
       </div>
       <div class="row gallery">
 

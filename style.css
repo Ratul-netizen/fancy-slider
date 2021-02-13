@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.nav-bar {
+  margin: 0px 60px;
+  padding: 0px 60px;
+}
 .gallery-header {
   display: none;
 }
@@ -21,11 +25,6 @@
 .added {
   border: 2px solid #1e1743;
   border-radius: 5px;
-}
-
-.remove{
-  border: 0px solid white;
-  border-radius: 0px;
 }
 
 img {
