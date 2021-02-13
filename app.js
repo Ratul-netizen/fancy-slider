@@ -47,7 +47,7 @@ const selectItem = (event, img) => {
   } 
 }
 
-
+// Timer problem
 let timer = 0;
 const createSlider = () => {
   // check slider image length
