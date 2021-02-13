@@ -126,7 +126,7 @@ sliderBtn.addEventListener('click', function () {
   createSlider()
 })
 
-//3. --SearchBox click on keyboard Enter  Feature --//  
+// SearchBox click on keyboard Enter  Feature  
 
 var input = document.getElementById("search");
 input.addEventListener("keyup", function (event) {
