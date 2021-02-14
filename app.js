@@ -18,7 +18,7 @@ const getImages = (query) => {
   toggleSpinner(); //Bonus item : Loading spinner function call before loading images
   fetch(`https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`)
     .then((response) => response.json())
-    .then((data) => showImages(data.hits)) // Bug 01: Type error fixed : hitS -> hits
+    .then((data) => showImages(data.hits))                                       // Bug 01: Type error fixed : hitS -> hits
     .catch((err) => console.log(err));
 };
 
@@ -37,7 +37,7 @@ const showImages = (images) => {
     gallery.appendChild(div);
 
   });
-  toggleSpinner(); //Bonus item : Loading spinner function call after loading images
+  toggleSpinner();                                              //Bonus item : Loading spinner function call after loading images
 
 };
 
@@ -46,7 +46,7 @@ const showImages = (images) => {
 let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
-  element.classList.toggle("added"); //Replaced add() function with toggle()
+  element.classList.toggle("added");                                       //Replaced add() function with toggle()
 
   let item = sliders.indexOf(img);
   if (item === -1) {
@@ -90,7 +90,7 @@ const createSlider = () => {                                                    
   changeSlide(0);
 
   // Slider Duration fix 
-  if (duration >= 1000) {                                            // Bug 03: negative time handling
+  if (duration >= 1000) {                                                          // Bug 03: negative time handling
     timer = setInterval(function () {
       slideIndex++;
       changeSlide(slideIndex);
@@ -149,7 +149,7 @@ sliderBtn.addEventListener("click", function () {
 
 
 // SearchBox clickHandler for keyboard enter button 
-var input = document.getElementById("search"); // Bug 04: Added keyboard enter features
+var input = document.getElementById("search");                                    // Bug 04: Added keyboard enter features
 input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
