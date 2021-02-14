@@ -57,7 +57,7 @@ const selectItem = (event, img) => {
 
 // --Create Slider --//
 var timer;
-const createSlider = () => { // Bug 02: Create Slider
+const createSlider = () => {                                                     // Bug 02: Create Slider
   // check slider image length
   if (sliders.length < 2) {
     alert("Select at least 2 image.");
@@ -76,7 +76,7 @@ const createSlider = () => { // Bug 02: Create Slider
   sliderContainer.appendChild(prevNext);
   document.querySelector(".main").style.display = "block";
 
-  //    Hide image aria 
+  //    Hide image area 
   imagesArea.style.display = "none";
   const duration = document.getElementById("duration").value || 1000;
   sliders.forEach((slide) => {
@@ -102,7 +102,6 @@ const createSlider = () => { // Bug 02: Create Slider
       changeSlide(slideIndex);
     }, 1000);
   } else if (duration >= 500 || duration < 500 || duration < 600 || duration < 700 || duration < 800 || duration < 900) {
-    confirm("Are You want to speed up slider change??");
     timer = setInterval(function () {
       slideIndex++;
       changeSlide(slideIndex);
