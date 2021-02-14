@@ -42,7 +42,7 @@ const showImages = (images) => {
 };
 
 
-// Image select and deselect                                    // Bug 05: Select and deselect Image
+// Image select and deselect                                                // Bug 05: Select and deselect Image
 let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
@@ -55,15 +55,15 @@ const selectItem = (event, img) => {
 };
 
 
-// --Create Slider --//
+//     Create Slider 
 var timer;
 const createSlider = () => {                                                     // Bug 02: Create Slider
-  // check slider image length
+  // Check slider image length
   if (sliders.length < 2) {
     alert("Select at least 2 image.");
     return;
   }
-  // Create slider previous next area
+  //    Create slider previous next area
   sliderContainer.innerHTML = "";
   const prevNext = document.createElement("div");
   prevNext.className =
